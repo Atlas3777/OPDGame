@@ -1,0 +1,4 @@
+repository "OPDGame@neaquarium@cloud"
+  path "/"
+    br "/main"
+    co "/main"
