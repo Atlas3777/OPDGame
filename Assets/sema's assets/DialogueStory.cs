@@ -79,7 +79,15 @@ public class DialogueStory : MonoBehaviour
             if (answer.ResponseText == "stop") 
                 button.GetComponent<Button>().onClick.AddListener(() => StopStory());
             else
-                button.GetComponent<Button>().onClick.AddListener(() => {answer.IsUsed = true; ChangeStory(answer.ResponseText, answer.NewText);});
+                button.GetComponent<Button>().onClick.AddListener(() => 
+                {
+                    FileReader.Termins["st"] = true;
+                    FileReader.Read();
+                    FileReader.Write("NEW");
+                    answer.IsUsed = true;
+                    ChangeStory(answer.ResponseText, answer.NewText);
+                }
+                );
         }
         if (story.Answers.All(x => x.IsUsed)) ChangeStory(story.StopTag, Newtext);
     }
