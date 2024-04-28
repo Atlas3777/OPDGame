@@ -6,11 +6,16 @@ using System.Collections.Generic;
 public class FileReader : MonoBehaviour
 {
     public static Dictionary<string, bool> Termins { get; private set; }
+    public static string filePath;
+
+    public FileReader()
+    {
+        filePath = Application.dataPath + "/example.txt";
+    }
 
     public static void Read()
     {
-        string filePath = Application.dataPath + "/example.txt";
-
+        filePath = Application.dataPath + "/example.txt";
         //Проверяем, существует ли файл
         if (File.Exists(filePath))
         {
@@ -27,14 +32,10 @@ public class FileReader : MonoBehaviour
     }
     public static void Write(string text)
     {
-        string filePath = Application.dataPath + "/example.txt";
-       
-
-        //// Записываем текст в файл
-        File.WriteAllText(filePath, text);
+        filePath = Application.dataPath + "/example.txt";
+        File.AppendAllText(filePath, text + "\n");
 
         Debug.Log("Файл успешно записан!");
-
 
     }
 }

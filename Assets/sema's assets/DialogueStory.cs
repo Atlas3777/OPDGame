@@ -81,9 +81,11 @@ public class DialogueStory : MonoBehaviour
             else
                 button.GetComponent<Button>().onClick.AddListener(() => 
                 {
-                    FileReader.Termins["st"] = true;
+                    //FileReader.Termins["st"] = true;
+                    FileReader.Write(story.Text);
+                    FileReader.Write(text.text);
                     FileReader.Read();
-                    FileReader.Write("NEW");
+
                     answer.IsUsed = true;
                     ChangeStory(answer.ResponseText, answer.NewText);
                 }

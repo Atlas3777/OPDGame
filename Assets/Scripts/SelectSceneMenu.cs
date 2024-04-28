@@ -28,4 +28,8 @@ public class SelectScene : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
+    public void SelectDictionaryScene()
+    {
+        SceneManager.LoadScene("Dictionary");
+    }
 }
