@@ -1699,7 +1699,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1518746645}
         m_TargetAssemblyTypeName: SelectScene, Assembly-CSharp
-        m_MethodName: SelectLogbookScene
+        m_MethodName: SelectDictionaryScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1924,7 +1924,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1518746645}
         m_TargetAssemblyTypeName: SelectScene, Assembly-CSharp
-        m_MethodName: SelectGameScene
+        m_MethodName: SelectSampleScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

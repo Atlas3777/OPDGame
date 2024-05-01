@@ -86,6 +86,10 @@ public class DialogueStory : MonoBehaviour
                     FileReader.Write(text.text);
                     FileReader.Read();
 
+                    Logbook.AddText(story.Text);
+                    Logbook.AddText(text.text);
+
+
                     answer.IsUsed = true;
                     ChangeStory(answer.ResponseText, answer.NewText);
                 }

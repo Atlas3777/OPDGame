@@ -1,20 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Logbook : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] public GameObject phrase;
+    [SerializeField] public Transform panelTransform;
+
+    [SerializeField] public static List<string> text = new();
+
+    public static void AddText(string t)
     {
-        
-
-
+        text.Add(t);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Start()
     {
-        
+        foreach (string t in text)
+        {
+            var r = Instantiate(phrase, panelTransform);
+            r.GetComponentInChildren<TextMeshProUGUI>().text = t;
+        }
+
     }
 }

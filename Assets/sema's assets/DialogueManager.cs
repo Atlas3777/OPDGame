@@ -9,9 +9,12 @@ public class DialogueManager : MonoBehaviour
     public GameObject player;
     private PlayerMoveS pm;
 
+
     void Start()
     {
         pm = player.GetComponent<PlayerMoveS>();
+
+
     }
     public void StartDialogue()
     {

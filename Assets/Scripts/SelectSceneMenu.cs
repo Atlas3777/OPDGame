@@ -30,6 +30,10 @@ public class SelectScene : MonoBehaviour
     }
     public void SelectDictionaryScene()
     {
-        SceneManager.LoadScene("Dictionary");
+        SceneManager.LoadScene("DictionaryScene");
+    }
+    public void SelectSampleScene()
+    {
+        SceneManager.LoadScene("SampleScene");
     }
 }
