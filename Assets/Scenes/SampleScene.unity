@@ -424,6 +424,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 1839385082}
   player: {fileID: 302845630}
+  text_panel: {fileID: 0}
+  panel: {fileID: 0}
 --- !u!1 &256679180
 GameObject:
   m_ObjectHideFlags: 3
@@ -1767,6 +1769,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b332af72d45b9944e94703c18525f183, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Ebutton: {fileID: 2017101033}
 --- !u!1 &1322740961
 GameObject:
   m_ObjectHideFlags: 0
@@ -1930,7 +1933,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1405237437}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalPosition: {x: 0, y: 0, z: -77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1939,7 +1942,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -817, y: -350}
+  m_AnchoredPosition: {x: -362, y: -114}
   m_SizeDelta: {x: 229.9, y: 295.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1405237439

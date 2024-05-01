@@ -12,12 +12,12 @@ public class Logbook : MonoBehaviour
 
     public static void AddText(string t)
     {
-        text.Add(t);
+        FileReader.Write(t);
     }
 
-    public void Start()
+    void Start()
     {
-        foreach (string t in text)
+        foreach (string t in FileReader.Read())
         {
             var r = Instantiate(phrase, panelTransform);
             r.GetComponentInChildren<TextMeshProUGUI>().text = t;

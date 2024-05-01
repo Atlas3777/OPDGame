@@ -2,6 +2,7 @@ using UnityEngine;
 using System.IO;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 
 public class FileReader : MonoBehaviour
 {
@@ -13,19 +14,20 @@ public class FileReader : MonoBehaviour
         filePath = Application.dataPath + "/example.txt";
     }
 
-    public static void Read()
+    public static List<string> Read()
     {
         filePath = Application.dataPath + "/example.txt";
-        //Проверяем, существует ли файл
+        //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅ
         if (File.Exists(filePath))
         {
-            // Читаем текст из файла
-            string fileContent = File.ReadAllText(filePath);
-            Debug.Log("Содержимое файла: " + fileContent);
+            // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+            string[] fileContent = File.ReadAllLines(filePath);
+            return fileContent.ToList();
         }
         else
         {
-            Debug.LogError("Файл не найден!");
+            Debug.LogError("пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ!");
+            return new List<string>();
         }
 
         
@@ -35,7 +37,7 @@ public class FileReader : MonoBehaviour
         filePath = Application.dataPath + "/example.txt";
         File.AppendAllText(filePath, text + "\n");
 
-        Debug.Log("Файл успешно записан!");
+        Debug.Log("пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ!");
 
     }
 }
