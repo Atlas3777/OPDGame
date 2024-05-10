@@ -8,25 +8,22 @@ public class DialogueManager : MonoBehaviour
 {
     public Animator anim;
     public GameObject player;
-    private PlayerMoveS PlayerMove;
-    public TextMeshProUGUI text_panel;
-    public Transform panel;
+    private PlayerMove PlayerMove;
 
 
     void Start()
     {
-        PlayerMove = player.GetComponent<PlayerMoveS>();
-
+        PlayerMove = player.GetComponent<PlayerMove>();
 
     }
     public void StartDialogue()
     {
-        PlayerMove.speed = 0; 
+        PlayerMove.stop = true; 
         anim.SetBool("start", true);
     }
     public void StopDialogue()
     {
-        PlayerMove.speed = 1; 
+        PlayerMove.stop = false; 
         anim.SetBool("start", false);
     }
 }

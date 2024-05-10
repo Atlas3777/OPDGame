@@ -21,7 +21,6 @@ public class DialogueStory : MonoBehaviour
 
     private Dictionary<string, Story> _storiesDictionary;
 
-    private List<GameObject> buttons = new List<GameObject>();
     private DialogueManager dm;
 
     [Serializable]
@@ -95,6 +94,7 @@ public class DialogueStory : MonoBehaviour
                 }
                 );
         }
+        LayoutRebuilder.ForceRebuildLayoutImmediate(panel.GetComponent<RectTransform>());
         if (story.Answers.All(x => x.IsUsed)) ChangeStory(story.StopTag, Newtext);
     }
 
