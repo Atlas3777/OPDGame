@@ -834,6 +834,124 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &313769542
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 313769543}
+  - component: {fileID: 313769547}
+  - component: {fileID: 313769546}
+  - component: {fileID: 313769545}
+  - component: {fileID: 313769544}
+  m_Layer: 5
+  m_Name: CharacterPanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &313769543
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313769542}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1141205436}
+  m_Father: {fileID: 1839385081}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: -557.2, y: 51.2}
+  m_SizeDelta: {x: 0, y: 50.7}
+  m_Pivot: {x: 0, y: 0.5}
+--- !u!114 &313769544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313769542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 5
+    m_Right: 5
+    m_Top: 5
+    m_Bottom: 5
+  m_ChildAlignment: 0
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 1
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
+--- !u!114 &313769545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313769542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 2
+  m_VerticalFit: 0
+--- !u!114 &313769546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313769542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &313769547
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313769542}
+  m_CullTransparentMesh: 1
 --- !u!1 &313933623
 GameObject:
   m_ObjectHideFlags: 0
@@ -1260,6 +1378,7 @@ GameObject:
   - component: {fileID: 616014463}
   - component: {fileID: 616014462}
   - component: {fileID: 616014461}
+  - component: {fileID: 616014466}
   m_Layer: 0
   m_Name: TriggerNextLvl
   m_TagString: Untagged
@@ -1296,7 +1415,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1369,6 +1488,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1280380213}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &616014466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616014460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4af4cf1cfdbd8f64083a02ceb90d13a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &719165363
 GameObject:
   m_ObjectHideFlags: 0
@@ -2210,6 +2341,142 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1140755070}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1141205433
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1141205436}
+  - component: {fileID: 1141205435}
+  - component: {fileID: 1141205434}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1141205434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141205433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: dasasassss
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: -3.063713, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1141205435
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141205433}
+  m_CullTransparentMesh: 1
+--- !u!224 &1141205436
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141205433}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 313769543}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1171340784
 GameObject:
   m_ObjectHideFlags: 0
@@ -2593,6 +2860,7 @@ MonoBehaviour:
     <Text>k__BackingField: "\u041D\u0430\u043A\u043E\u043D\u0435\u0446-\u0442\u043E
       \u0442\u044B \u043E\u0447\u043D\u0443\u043B\u0441\u044F!!"
     <StopTag>k__BackingField: 1
+    <Character>k__BackingField: ???
     <Answers>k__BackingField:
     - <Text>k__BackingField: "\u0413\u0434\u0435 \u044D\u0442\u043E \u044F?"
       <ResponseText>k__BackingField: start
@@ -2601,6 +2869,9 @@ MonoBehaviour:
         \u0445\u0432\u0430\u043B\u0430 \u0411\u043E\u0433\u0430\u043C, \u0447\u0442\u043E
         \u0441\u044E\u0434\u0430 \u0435\u0449\u0435 \u043D\u0435 \u0434\u043E\u0431\u0440\u0430\u043B\u0438\u0441\u044C
         \u044D\u0442\u0438 \u0431\u0435\u0437\u0443\u043C\u0446\u044B."
+      <Action>k__BackingField:
+        m_PersistentCalls:
+          m_Calls: []
       IsUsed: 0
     - <Text>k__BackingField: "\u041A\u0442\u043E \u0442\u044B \u0442\u0430\u043A\u043E\u0439?"
       <ResponseText>k__BackingField: start
@@ -2611,6 +2882,9 @@ MonoBehaviour:
         \u043E\u0431\u043E \u043C\u043D\u0435, \u0430 \u043C\u043E\u0439 \u0443\u0447\u0435\u043D\u0438\u043A
         \u0434\u043E\u043B\u0436\u0435\u043D \u0443\u0436 \u0442\u0435\u043C \u0431\u043E\u043B\u0435\u0435,\u0410\u043C\u0438\u043A\u043B.
         \u0418\u043C\u044F \u043C\u043D\u0435 - \u041F\u043B\u0430\u0442\u043E\u043D!"
+      <Action>k__BackingField:
+        m_PersistentCalls:
+          m_Calls: []
       IsUsed: 0
     - <Text>k__BackingField: "\u0427\u0442\u043E \u0441\u043B\u0443\u0447\u0438\u043B\u043E\u0441\u044C?"
       <ResponseText>k__BackingField: start
@@ -2621,6 +2895,9 @@ MonoBehaviour:
         \u0443\u0436 \u043D\u0435 \u043F\u043E\u0439\u043C\u0443 \u043F\u0440\u043E\u043A\u0430\u0437\u0430
         \u044D\u0442\u043E \u043A\u0430\u043A\u0430\u044F \u0438\u043B\u0438 \u0447\u0442\u043E
         \u0435\u0449\u0435 \u043F\u043E\u0445\u0443\u0436\u0435."
+      <Action>k__BackingField:
+        m_PersistentCalls:
+          m_Calls: []
       IsUsed: 0
   - <Tag>k__BackingField: 1
     <Text>k__BackingField: "\u0412\u043E\u0442 \u0447\u0442\u043E \u044F \u0442\u0435\u0431\u0435
@@ -2640,10 +2917,26 @@ MonoBehaviour:
       \u043D\u0430\u0441\u0442\u0430\u0432\u043B\u044F\u0439 \u0432\u0441\u0435\u0445
       \u0441\u0442\u0440\u0430\u0436\u0434\u0443\u0449\u0438\u0445!"
     <StopTag>k__BackingField: 
+    <Character>k__BackingField: "\u041F\u043B\u0430\u0442\u043E\u043D"
     <Answers>k__BackingField:
     - <Text>k__BackingField: "[\u041F\u0440\u043E\u0434\u043E\u043B\u0436\u0438\u0442\u044C]"
       <ResponseText>k__BackingField: 2
       <NewText>k__BackingField: 
+      <Action>k__BackingField:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 0}
+            m_TargetAssemblyTypeName: 
+            m_MethodName: 
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: 
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 1
       IsUsed: 0
   - <Tag>k__BackingField: 2
     <Text>k__BackingField: "\u0421\u0435\u0439\u0447\u0430\u0441 \u044F \u0432\u043D\u043E\u0432\u044C
@@ -2651,10 +2944,14 @@ MonoBehaviour:
       \u0442\u0435\u0431\u0435 \u043E \u043C\u043E\u0435\u0433\u043E \u0443\u0447\u0435\u043D\u0438\u044F,
       \u0447\u0438\u0442\u0430\u0439 \u0438 \u0432\u043D\u0438\u043C\u0430\u0439!"
     <StopTag>k__BackingField: 
+    <Character>k__BackingField: "\u041F\u043B\u0430\u0442\u043E\u043D"
     <Answers>k__BackingField:
     - <Text>k__BackingField: "[\u041F\u0440\u043E\u0434\u043E\u043B\u0436\u0438\u0442\u044C]"
       <ResponseText>k__BackingField: 3
       <NewText>k__BackingField: 
+      <Action>k__BackingField:
+        m_PersistentCalls:
+          m_Calls: []
       IsUsed: 0
   - <Tag>k__BackingField: 3
     <Text>k__BackingField: "\u0410 \u0442\u0435\u043F\u0435\u0440\u044C \u043E\u0442\u043F\u0440\u0430\u0432\u043B\u044F\u0439\u0441\u044F
@@ -2662,6 +2959,7 @@ MonoBehaviour:
       \u043D\u0430\u0441\u0442\u0430\u0432\u043B\u044F\u0439 \u0432\u0441\u0435\u0445
       \u0441\u0442\u0440\u0430\u0436\u0434\u0443\u0449\u0438\u0445!"
     <StopTag>k__BackingField: stop
+    <Character>k__BackingField: "\u041F\u043B\u0430\u0442\u043E\u043D"
     <Answers>k__BackingField:
     - <Text>k__BackingField: "\u0410 \u0447\u0435\u043C \u0431\u0443\u0434\u0435\u0448\u044C
         \u0437\u0430\u043D\u044F\u0442 \u0442\u044B?"
@@ -2673,24 +2971,47 @@ MonoBehaviour:
         \u041D\u043E \u043C\u0435\u043D\u044F \u043E\u0434\u043D\u043E\u0433\u043E
         \u043D\u0435 \u0445\u0432\u0430\u0442\u0438\u0442, \u0441\u0430\u043C \u043F\u043E\u043D\u0438\u043C\u0430\u0435\u0448\u044C.
         \u041F\u043E \u0441\u0438\u043C\u0443 \u043D\u0435 \u043C\u0435\u0434\u043B\u0438!"
+      <Action>k__BackingField:
+        m_PersistentCalls:
+          m_Calls: []
       IsUsed: 0
     - <Text>k__BackingField: "\u0423\u0439\u0442\u0438."
       <ResponseText>k__BackingField: 4
       <NewText>k__BackingField: 
+      <Action>k__BackingField:
+        m_PersistentCalls:
+          m_Calls: []
       IsUsed: 0
   - <Tag>k__BackingField: 4
     <Text>k__BackingField: "\u0423\u0434\u0430\u0447\u0438 \u0432 \u043F\u0443\u0442\u0438,
       \u0434\u0440\u0443\u0433 \u043C\u043E\u0439."
     <StopTag>k__BackingField: 
+    <Character>k__BackingField: "\u041F\u043B\u0430\u0442\u043E\u043D"
     <Answers>k__BackingField:
     - <Text>k__BackingField: "[\u041A\u043E\u043D\u0435\u0446 \u0434\u0438\u0430\u043B\u043E\u0433\u0430]"
       <ResponseText>k__BackingField: stop
       <NewText>k__BackingField: 
+      <Action>k__BackingField:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 616014462}
+            m_TargetAssemblyTypeName: UnityEngine.Collider, UnityEngine
+            m_MethodName: set_isTrigger
+            m_Mode: 6
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 1
+            m_CallState: 2
       IsUsed: 0
   MainButton: {fileID: 795886832}
   VCamera: {fileID: 2124445967}
   text_panel: {fileID: 1322740964}
-  panel: {fileID: 1898480057}
+  ButtonsPanel: {fileID: 1898480057}
+  Character_panel: {fileID: 1141205434}
 --- !u!114 &1301625436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3686,6 +4007,7 @@ RectTransform:
   - {fileID: 795886833}
   - {fileID: 1556698762}
   - {fileID: 1898480057}
+  - {fileID: 313769543}
   m_Father: {fileID: 275773202}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
