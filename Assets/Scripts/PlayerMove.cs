@@ -6,12 +6,13 @@ public class PlayerMove : MonoBehaviour
 {
     [SerializeField] public float _speed = 5;
     [SerializeField] public GameObject floor;
+    private SpriteRenderer sr;
 
     public bool stop = false;
     //TODO: �������� Offset x/y
     void Start()
     {
-        
+        sr = GetComponentInChildren<SpriteRenderer>();
     }
 
     void Update()
@@ -35,6 +36,7 @@ public class PlayerMove : MonoBehaviour
                 
             if (Input.GetKey(KeyCode.A))
             {
+                sr.flipX = false;
                 var newPosition = transform.position + new Vector3(-1, 0, 0) * _speed * Time.deltaTime;
                 newPosition.x = Mathf.Clamp(newPosition.x, -floor.transform.localScale.x / 2, floor.transform.localScale.x / 2);      
                 transform.position = newPosition;
@@ -43,6 +45,7 @@ public class PlayerMove : MonoBehaviour
 
             if (Input.GetKey(KeyCode.D))
             {
+                sr.flipX = true;
                 var newPosition = transform.position + new Vector3(1, 0, 0) * _speed * Time.deltaTime;
                 newPosition.x = Mathf.Clamp(newPosition.x, -floor.transform.localScale.x / 2, floor.transform.localScale.x / 2);
                 transform.position = newPosition;
