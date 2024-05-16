@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,8 +8,8 @@ using static GlobasVar;
 [AddComponentMenu("My components/ToNextLevel")]
 public class ToNextLevel : MonoBehaviour
 {
-    [Header("Индекс сцены")]
-    public int _sceneIndex;
+    [Header("пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ")]
+    [SerializeField] public int _sceneIndex;
     [SerializeField] Direction direction;
     
 
@@ -25,9 +26,14 @@ public class ToNextLevel : MonoBehaviour
             if (direction == Direction.Down)
                 directionEntry = Direction.Up;
 
-
+            Save.SaveData(_sceneIndex, directionEntry);
             SceneManager.LoadScene(_sceneIndex);
             
         }
+    }
+
+    void SaveScene() {
+        FileReader.Write("save.txt", "scam");
+        FileReader.Write("save.txt", directionEntry.ToString());
     }
 }

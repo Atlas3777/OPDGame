@@ -7,37 +7,43 @@ using System.Linq;
 public class FileReader : MonoBehaviour
 {
     public static Dictionary<string, bool> Termins { get; private set; }
-    public static string filePath;
+    public static string filePathLogbook;
+    public static string filePathSave;
 
-    public FileReader()
+    void Start()
     {
-        filePath = Application.dataPath + "/example.txt";
+        filePathLogbook = Application.dataPath + "/example.txt";
+        filePathSave = Application.dataPath + "/save.txt";
     }
 
-    public static List<string> Read()
+    public static List<string> Read(string fileName)
     {
-        filePath = Application.dataPath + "/example.txt";
-        //���������, ���������� �� ����
-        if (File.Exists(filePath))
+        fileName = Application.dataPath +"/Saves/"+ fileName;
+        if (File.Exists(fileName))
         {
-            // ������ ����� �� �����
-            string[] fileContent = File.ReadAllLines(filePath);
+            string[] fileContent = File.ReadAllLines(fileName);
             return fileContent.ToList();
         }
         else
         {
-            Debug.LogError("���� �� ������!");
+            Debug.LogError("Error!");
             return new List<string>();
         }
 
-        
+
     }
-    public static void Write(string text)
+    public static void Write(string fileName, string text)
     {
-        filePath = Application.dataPath + "/example.txt";
-        File.AppendAllText(filePath, text + "\n");
+        fileName = Application.dataPath +"/Saves/"+ fileName;
+        File.AppendAllText(fileName, text + "\n");
 
-        Debug.Log("���� ������� �������!");
+        Debug.Log("Write!");
 
+    }
+
+    public static void Cleer(string fileName)
+    {
+        fileName = Application.dataPath + "/Saves/" + fileName;
+        File.WriteAllText(fileName, string.Empty);
     }
 }

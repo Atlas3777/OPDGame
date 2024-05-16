@@ -1,9 +1,13 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Build.Content;
+using UnityEditor.SearchService;
 using UnityEngine;
 
 public class GlobasVar : MonoBehaviour
 {
+    [Serializable]
     public enum Direction
     {
         Up,
@@ -14,4 +18,5 @@ public class GlobasVar : MonoBehaviour
 
     public static Direction directionEntry;
 
+    
 }

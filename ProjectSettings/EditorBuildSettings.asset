@@ -37,6 +37,9 @@ EditorBuildSettings:
     guid: 66f0bbc494d8e0c4bbc6a5f20f99f66a
   - enabled: 1
     path: Assets/Scenes/Finaly scenes/Scene_2.unity
-    guid: fa96f78dd403d0140a0a82dd081c8b4e
+    guid: bb3d60303b02e4544af5611436099250
+  - enabled: 1
+    path: Assets/Scenes/Finaly scenes/Scene_3.unity
+    guid: 47fde69946d53944fa606d194b3c083d
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

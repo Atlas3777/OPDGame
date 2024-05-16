@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMove : MonoBehaviour
 {
@@ -17,6 +19,7 @@ public class PlayerMove : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKey(KeyCode.Escape)) SceneManager.LoadScene("MainMenu");
         if (!stop) 
         { 
             if (Input.GetKey(KeyCode.W))

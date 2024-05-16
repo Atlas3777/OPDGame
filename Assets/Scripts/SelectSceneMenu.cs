@@ -1,10 +1,13 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SelectScene : MonoBehaviour
 {
+    [SerializeField] string s = "scam";
     [SerializeField] int sceneId;
     public void SelectGameScene()
     {
@@ -12,7 +15,7 @@ public class SelectScene : MonoBehaviour
     }
     public void SelectExitScene()
     {
-        Debug.Log("Игра закончина");
+        Debug.Log("пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ");
         Application.Quit();
     }
     public void SelectOptionsScene()
@@ -34,6 +37,10 @@ public class SelectScene : MonoBehaviour
     }
     public void SelectSampleScene()
     {
-        SceneManager.LoadScene("SampleScene");
+        // var stringList = FileReader.Read("save.txt");
+        // Debug.Log(JsonUtility.FromJson<int>(stringList[0]));
+        // GlobasVar.directionEntry = JsonUtility.FromJson<GlobasVar.Direction>(stringList[1]);
+        // SceneManager.LoadScene(JsonUtility.FromJson<int>(stringList[0]));
+        SceneManager.LoadScene("scene_1");
     }
 }
