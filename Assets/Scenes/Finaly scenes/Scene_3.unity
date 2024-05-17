@@ -906,7 +906,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4cb216becd0d67a48bd03842db3054e7, type: 2}
+  - {fileID: 2100000, guid: 5b848825c833ac149a94a6106d256338, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1115,7 +1115,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 460638952}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.14182222, y: -0.0000000039128607, z: 5.605973e-10, w: 0.9898922}
+  m_LocalRotation: {x: 0.14182222, y: -0.0000000039128625, z: 5.6059757e-10, w: 0.9898922}
   m_LocalPosition: {x: -3.9066164, y: 6.814173, z: -15.838961}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1278,7 +1278,6 @@ GameObject:
   - component: {fileID: 616014463}
   - component: {fileID: 616014462}
   - component: {fileID: 616014461}
-  - component: {fileID: 616014466}
   m_Layer: 0
   m_Name: TriggerNextLvl
   m_TagString: Untagged
@@ -1298,7 +1297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70454ff382e018b4ab5f6123baa2ffd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sceneIndex: 9
+  _sceneIndex: 0
   direction: 1
 --- !u!65 &616014462
 BoxCollider:
@@ -1382,24 +1381,12 @@ Transform:
   m_GameObject: {fileID: 616014460}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.972, y: -12.327023, z: 13.169153}
+  m_LocalPosition: {x: 8.972, y: -12.327023, z: 15.91}
   m_LocalScale: {x: 1, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1280380213}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &616014466
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 616014460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4af4cf1cfdbd8f64083a02ceb90d13a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &795886832
 GameObject:
   m_ObjectHideFlags: 0
@@ -2148,7 +2135,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.14182222, y: -0.0000000039128607, z: 5.605973e-10, w: 0.9898922}
+  m_LocalRotation: {x: 0.14182222, y: -0.0000000039128625, z: 5.6059757e-10, w: 0.9898922}
   m_LocalPosition: {x: -3.9066164, y: 6.814173, z: -15.838961}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4535,7 +4522,19 @@ MonoBehaviour:
       <NewText>k__BackingField: 
       <Action>k__BackingField:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 616014462}
+            m_TargetAssemblyTypeName: UnityEngine.Collider, UnityEngine
+            m_MethodName: set_isTrigger
+            m_Mode: 6
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 1
+            m_CallState: 2
       IsUsed: 0
   MainButton: {fileID: 795886832}
   VCamera: {fileID: 2124445967}

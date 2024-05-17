@@ -1,10 +1,8 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Cinemachine;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -89,8 +87,8 @@ public class DialogueStory : MonoBehaviour
                 button.GetComponent<Button>().onClick.AddListener(() => 
                 {
 
-                    Logbook.AddText(story.Text);
-                    Logbook.AddText(text.text);
+                    // Logbook.AddText(story.Text);
+                    // Logbook.AddText(text.text);
 
                     answer.IsUsed = true;
                     ChangeStory(answer.ResponseText, answer.NewText);
