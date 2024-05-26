@@ -33,10 +33,13 @@ public class SelectScene : MonoBehaviour
     }
     public void SelectSampleScene()
     {
-        // var stringList = FileReader.Read("save.txt");
-        // Debug.Log(JsonUtility.FromJson<int>(stringList[0]));
-        // GlobasVar.directionEntry = JsonUtility.FromJson<GlobasVar.Direction>(stringList[1]);
-        // SceneManager.LoadScene(JsonUtility.FromJson<int>(stringList[0]));
-        SceneManager.LoadScene("scene_1");
+        var stringList = FileReader.Read("save.txt");
+        if (stringList.Count != 0){
+            Save.Data d = JsonUtility.FromJson<Save.Data>(stringList[0]);
+            GlobasVar.directionEntry = d.direction;
+            SceneManager.LoadScene(d.sceneName);
+        }
+        else
+            SceneManager.LoadScene("Scene_1");
     }
 }

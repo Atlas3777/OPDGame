@@ -6,7 +6,7 @@ using static GlobasVar;
 public class ToNextLevel : MonoBehaviour
 {
     [Header("������ �����")]
-    [SerializeField] public int _sceneIndex;
+    [SerializeField] public string _sceneName;
     [SerializeField] Direction direction;
     
 
@@ -23,8 +23,8 @@ public class ToNextLevel : MonoBehaviour
             if (direction == Direction.Down)
                 directionEntry = Direction.Up;
 
-            Save.SaveData(_sceneIndex, directionEntry);
-            SceneManager.LoadScene(_sceneIndex);
+            Save.SaveData(_sceneName, directionEntry);
+            SceneManager.LoadScene(_sceneName);
             
         }
     }

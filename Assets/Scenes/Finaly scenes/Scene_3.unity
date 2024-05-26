@@ -1115,7 +1115,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 460638952}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.14182222, y: -0.0000000039128625, z: 5.6059757e-10, w: 0.9898922}
+  m_LocalRotation: {x: 0.14182222, y: -0.0000000039128607, z: 5.605973e-10, w: 0.9898922}
   m_LocalPosition: {x: -3.9066164, y: 6.814173, z: -15.838961}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1297,7 +1297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70454ff382e018b4ab5f6123baa2ffd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sceneIndex: 0
+  _sceneName: MainMenu
   direction: 1
 --- !u!65 &616014462
 BoxCollider:
@@ -2135,7 +2135,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.14182222, y: -0.0000000039128625, z: 5.6059757e-10, w: 0.9898922}
+  m_LocalRotation: {x: 0.14182222, y: -0.0000000039128607, z: 5.605973e-10, w: 0.9898922}
   m_LocalPosition: {x: -3.9066164, y: 6.814173, z: -15.838961}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

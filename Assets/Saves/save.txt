@@ -1,12 +1,1 @@
-{}
-{"value__":3}
-{}
-{"value__":3}
-scam
-Left
-scam
-Left
-scam
-Left
-scam
-Left
+{"sceneName":"MainMenu","direction":3}
