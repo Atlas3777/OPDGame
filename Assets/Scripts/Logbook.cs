@@ -6,7 +6,6 @@ public class Logbook : MonoBehaviour
 {
     [SerializeField] public GameObject phrase;
     [SerializeField] public Transform panelTransform;
-
     [SerializeField] public static List<string> text = new();
 
     public static void AddText(string t)

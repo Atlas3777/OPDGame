@@ -17,6 +17,7 @@ public class SelectScene : MonoBehaviour
     public void SelectOptionsScene()
     {
         SceneManager.LoadScene("Options");  
+        DictionaryScript.AddText("Scam", "Scam - это то что нас окружает");
     }
     public void SelectLogbookScene()
     {
