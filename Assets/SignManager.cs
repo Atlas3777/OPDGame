@@ -4,19 +4,44 @@ using UnityEngine;
 
 public class SignManager : MonoBehaviour
 {
-    [SerializeField] private GameObject canvasSing;
-    [SerializeField] private GameObject canvasDialoge;
+     public GameObject canvasSing;
+     public GameObject DialogePanel;
+
+    public void DisableAllComponents(GameObject gameObject)
+    {
+        Component[] childComponents = gameObject.GetComponentsInChildren<Component>();
+
+        foreach (Component component in childComponents)
+        {
+            if (component is Behaviour behaviour)
+            {
+                behaviour.enabled = false;
+            }
+        }
+    }
+    public void EnableAllComponents(GameObject gameObject)
+    {
+        Component[] childComponents = gameObject.GetComponentsInChildren<Component>();
+
+        foreach (Component component in childComponents)
+        {
+            if (component is Behaviour behaviour)
+            {
+                behaviour.enabled = true;
+            }
+        }
+    }
+
 
     public void ShowSign()
     {
         canvasSing.SetActive(true);
-        canvasDialoge.SetActive(false);
-
+        DisableAllComponents(DialogePanel);
     }
 
     public void HideSign()
     {
-        canvasSing?.SetActive(false);
-        canvasDialoge?.SetActive(true);
+        EnableAllComponents(DialogePanel);
+        canvasSing.SetActive(false);
     }
 }
