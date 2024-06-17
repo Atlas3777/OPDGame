@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using static GlobasVar;
@@ -8,9 +9,16 @@ public class ToNextLevel : MonoBehaviour
     [Header("������ �����")]
     [SerializeField] public string _sceneName;
     [SerializeField] Direction direction;
-    
+    public SceneFader sceneFader;
 
-    void OnTriggerEnter(Collider myCollider)
+    void Start()
+    {
+        if (sceneFader is null) {
+            sceneFader = FindFirstObjectByType<SceneFader>();
+        }    
+    }
+
+    IEnumerator OnTriggerEnter(Collider myCollider)
     {
         if (myCollider.tag == ("Player"))
         {
@@ -24,6 +32,8 @@ public class ToNextLevel : MonoBehaviour
                 directionEntry = Direction.Up;
 
             Save.SaveData(_sceneName, directionEntry);
+            yield return sceneFader.FadeIn();
+            
             SceneManager.LoadScene(_sceneName);
             
         }
