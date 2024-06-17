@@ -1032,6 +1032,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1e390776b903654fb648fced5fb6bf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  s: scam
   sceneId: 1
 --- !u!1 &809132133
 GameObject:
@@ -1385,6 +1386,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1e390776b903654fb648fced5fb6bf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  s: scam
   sceneId: 2
 --- !u!114 &1518746646
 MonoBehaviour:

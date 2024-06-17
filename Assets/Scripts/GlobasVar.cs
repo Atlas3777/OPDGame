@@ -14,5 +14,7 @@ public class GlobasVar : MonoBehaviour
 
     public static Direction directionEntry;
 
-    
+    public static string FadeText = "None";
+
+    public static string NextScene = "Scene_1";
 }

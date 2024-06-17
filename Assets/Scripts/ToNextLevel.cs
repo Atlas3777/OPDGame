@@ -9,6 +9,10 @@ public class ToNextLevel : MonoBehaviour
     [Header("������ �����")]
     [SerializeField] public string _sceneName;
     [SerializeField] Direction direction;
+
+    public bool fadeScene = false;
+
+    public string fadeText = "";
     public SceneFader sceneFader;
 
     void Start()
@@ -33,8 +37,10 @@ public class ToNextLevel : MonoBehaviour
 
             Save.SaveData(_sceneName, directionEntry);
             yield return sceneFader.FadeIn();
-            
-            SceneManager.LoadScene(_sceneName);
+
+            GlobasVar.NextScene = _sceneName;
+            if (fadeScene) SceneManager.LoadScene("FadeScene");
+            else SceneManager.LoadScene(_sceneName);
             
         }
     }
