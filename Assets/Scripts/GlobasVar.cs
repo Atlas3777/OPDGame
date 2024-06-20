@@ -12,7 +12,7 @@ public class GlobasVar : MonoBehaviour
         Left,
     }
 
-    public static Direction directionEntry;
+    public static Direction directionEntry = Direction.Left;
 
     public static string FadeText = "None";
 

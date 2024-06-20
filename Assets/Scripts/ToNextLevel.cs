@@ -39,6 +39,7 @@ public class ToNextLevel : MonoBehaviour
             yield return sceneFader.FadeIn();
 
             GlobasVar.NextScene = _sceneName;
+            GlobasVar.FadeText = fadeText;
             if (fadeScene) SceneManager.LoadScene("FadeScene");
             else SceneManager.LoadScene(_sceneName);
             

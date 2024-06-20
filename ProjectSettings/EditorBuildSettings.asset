@@ -27,6 +27,30 @@ EditorBuildSettings:
     path: Assets/Scenes/Finaly scenes/Scene_3.unity
     guid: 47fde69946d53944fa606d194b3c083d
   - enabled: 1
+    path: Assets/Scenes/Finaly scenes/Scene_4.unity
+    guid: 5bb6b885e83b0494bad889efe5caba4a
+  - enabled: 1
+    path: Assets/Scenes/Finaly scenes/Scene_5.unity
+    guid: 032a617c4c6d52347b5e46be5412f748
+  - enabled: 1
+    path: Assets/Scenes/Finaly scenes/Scene_6.unity
+    guid: 5d2d7bae441bd2a4badb6d71a20b4e05
+  - enabled: 1
+    path: Assets/Scenes/Finaly scenes/Scene_7.unity
+    guid: 8502639a3838286429f9b23fc132e134
+  - enabled: 1
+    path: Assets/Scenes/Finaly scenes/Scene_8.unity
+    guid: 3d9ee12ea7993ff48a6b80ea73c6f003
+  - enabled: 1
+    path: Assets/Scenes/Finaly scenes/Scene_9.unity
+    guid: cc2afea70d5fcb643981daed1843ce6b
+  - enabled: 1
+    path: Assets/Scenes/Finaly scenes/Scene_10.unity
+    guid: ab5182fe384ca1243a0dc32e2ebe57e8
+  - enabled: 1
+    path: Assets/Scenes/Finaly scenes/Scene_11.unity
+    guid: bb999dcd87c64df409c272f196e07d03
+  - enabled: 1
     path: Assets/Scenes/FadeScene.unity
     guid: c8594305172a22d43b12d08ca1b94b70
   m_configObjects: {}
