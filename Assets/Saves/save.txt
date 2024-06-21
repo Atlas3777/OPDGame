@@ -1,1 +1,0 @@
-{"sceneName":"Scene_10","direction":3}

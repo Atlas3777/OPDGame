@@ -544,14 +544,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.2679245, g: 0.2679245, b: 0.2679245, a: 1}
+  m_Color: {r: 0.3490566, g: 0.3490566, b: 0.3490566, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 15ad3574cfd429440869dc3829e89ce0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9c25a43b1087df4eb41766b52360cb5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1478,6 +1478,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1e390776b903654fb648fced5fb6bf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  s: scam
   sceneId: 2
 --- !u!114 &1518746646
 MonoBehaviour:

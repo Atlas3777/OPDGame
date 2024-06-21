@@ -12,7 +12,7 @@ public class Save : MonoBehaviour
 
     public static void SaveData(string sceneName, GlobasVar.Direction direction) {
         var d = new Data{sceneName = sceneName, direction = direction};
-        FileReader.Cleer("save.txt");
+        FileReader.Clear("save");
         FileReader.Write("save.txt", JsonUtility.ToJson(d));
     }
 }

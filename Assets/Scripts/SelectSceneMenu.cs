@@ -16,8 +16,7 @@ public class SelectScene : MonoBehaviour
     }
     public void SelectOptionsScene()
     {
-        SceneManager.LoadScene("Options");  
-        DictionaryScript.AddText("Scam", "Scam - это то что нас окружает");
+        SceneManager.LoadScene("Options"); 
     }
     public void SelectLogbookScene()
     {
@@ -35,7 +34,7 @@ public class SelectScene : MonoBehaviour
     public void SelectSampleScene()
     {
         var stringList = FileReader.Read("save.txt");
-        if (stringList.Count != 0){
+        if (stringList.Count != 0 && stringList[0] != string.Empty){
             Save.Data d = JsonUtility.FromJson<Save.Data>(stringList[0]);
             GlobasVar.directionEntry = d.direction;
             SceneManager.LoadScene(d.sceneName);

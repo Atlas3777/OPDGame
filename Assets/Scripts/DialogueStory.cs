@@ -82,13 +82,14 @@ public class DialogueStory : MonoBehaviour
             text.text = answer.Text;
             button.GetComponent<Button>().onClick.AddListener(() => answer.Action.Invoke());
             if (answer.ResponseText == "stop") 
-                button.GetComponent<Button>().onClick.AddListener(() => StopStory());
+                button.GetComponent<Button>().onClick.AddListener(() => {Logbook.AddText(story.Character + ": " + text_panel.text);
+                    Logbook.AddText("Амикл: " + text.text);StopStory();});
             else
                 button.GetComponent<Button>().onClick.AddListener(() => 
                 {
 
-                    // Logbook.AddText(story.Text);
-                    // Logbook.AddText(text.text);
+                    Logbook.AddText(story.Character + ": " + text_panel.text);
+                    Logbook.AddText("Амикл: " + text.text);
 
                     answer.IsUsed = true;
                     ChangeStory(answer.ResponseText, answer.NewText);

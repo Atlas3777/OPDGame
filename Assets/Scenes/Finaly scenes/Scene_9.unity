@@ -1690,7 +1690,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70454ff382e018b4ab5f6123baa2ffd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sceneName: Scene_10
+  _sceneName: MiniGame 4
   direction: 1
   fadeScene: 0
   fadeText: Scam

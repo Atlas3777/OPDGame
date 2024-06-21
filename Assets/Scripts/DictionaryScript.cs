@@ -21,6 +21,12 @@ public class DictionaryScript : MonoBehaviour
         FileReader.Write("example2.txt", JsonUtility.ToJson(new DictData() {key = key, text = text}));
     }
 
+    public static void AddText(string text)
+    {
+        var t = text.Split(':');
+        AddText(t[0], text);
+    }
+
     public void ChangeText(string key) {
         MainPanel.text = DictText[key];
     }
@@ -30,13 +36,15 @@ public class DictionaryScript : MonoBehaviour
         DictText.Clear();
         foreach (string t in FileReader.Read("example2.txt"))
         {
-            var data = JsonUtility.FromJson<DictData>(t);
-            if (!DictText.ContainsKey(data.key))
-            {
-                var p = Instantiate(phrase, panelTransform);
-                p.GetComponentInChildren<TextMeshProUGUI>().text = data.key;
-                p.GetComponent<Button>().onClick.AddListener(() => ChangeText(data.key));
-                DictText.Add(data.key, data.text);
+            if (t != string.Empty) {
+                var data = JsonUtility.FromJson<DictData>(t);
+                if (!DictText.ContainsKey(data.key))
+                {
+                    var p = Instantiate(phrase, panelTransform);
+                    p.GetComponentInChildren<TextMeshProUGUI>().text = data.key;
+                    p.GetComponent<Button>().onClick.AddListener(() => ChangeText(data.key));
+                    DictText.Add(data.key, data.text);
+                }
             }
         }
         

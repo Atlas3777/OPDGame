@@ -1369,7 +1369,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 460638952}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.14182222, y: 0.000000025846582, z: -0.0000000037030492, w: 0.9898922}
+  m_LocalRotation: {x: 0.14182222, y: 0.000000025846584, z: -0.0000000037030494, w: 0.9898922}
   m_LocalPosition: {x: -3.9066164, y: 6.814173, z: -15.838961}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2062,7 +2062,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.14182222, y: 0.000000025846582, z: -0.0000000037030492, w: 0.9898922}
+  m_LocalRotation: {x: 0.14182222, y: 0.000000025846584, z: -0.0000000037030494, w: 0.9898922}
   m_LocalPosition: {x: -3.9066164, y: 6.814173, z: -15.838961}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4853,7 +4853,7 @@ MonoBehaviour:
         \u043E\u0442\u043A\u0430\u0437 \u043E\u0442 \u043C\u0438\u0440\u0441\u043A\u0438\u0445
         \u0431\u043B\u0430\u0433, \u0445\u043E\u0442\u044C \u0438 \u043F\u043E\u043D\u0435\u0432\u043E\u043B\u0435,
         \u043D\u043E \u0442\u0435\u043F\u0435\u0440\u044C \u043E\u043D \u043C\u043E\u0436\u0435\u0442
-        \u0432\u043B\u0438\u0442\u0441\u044F \u0432 \u0438 \u0440\u044F\u0434\u044B."
+        \u0432\u043B\u0438\u0442\u0441\u044F \u0432 \u0438\u0445 \u0440\u044F\u0434\u044B."
       <ResponseText>k__BackingField: 2
       <NewText>k__BackingField: 
       <Action>k__BackingField:
